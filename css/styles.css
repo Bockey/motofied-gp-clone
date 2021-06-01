@@ -6,7 +6,9 @@
 .visibility {
   display: none;
 }
-
+.current {
+  background-color: rgb(48, 48, 48);
+}
 /*Typography*/
 
 h1,
@@ -190,6 +192,8 @@ button,
 .error-message {
   color: #cc2b2b;
   margin-top: 0;
+  position: absolute;
+  bottom: -1.4em;
 }
 
 /*search results*/

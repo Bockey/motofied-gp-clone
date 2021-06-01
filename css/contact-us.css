@@ -17,30 +17,29 @@ form {
 
 .userlabel,
 .emaillabel,
-.subjectlabel {
-  top: -5.2em;
-}
-.commentlabel {
-  top: -21.3rem;
-}
-.userlabel,
-.emaillabel,
 .subjectlabel,
 .commentlabel {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
-  position: relative;
+  position: absolute;
+  top: -0.2em;
+  left: 0;
 }
 
+.name-container,
+.email-container,
+.subject-container,
+.textarea-container {
+  position: relative;
+  margin: 1em 0;
+}
 @media (max-width: 769px) {
   .userlabel,
   .emaillabel,
   .subjectlabel {
     font-size: 18px;
-    top: -6rem;
   }
   .commentlabel {
-    top: -18.6rem;
     font-size: 18px;
   }
 }
@@ -49,10 +48,8 @@ form {
   .emaillabel,
   .subjectlabel {
     font-size: 16px;
-    top: -5.8rem;
   }
   .commentlabel {
-    top: -16.9rem;
     font-size: 16px;
   }
 }

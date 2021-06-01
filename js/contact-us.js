@@ -12,6 +12,14 @@ const emailError = document.querySelector(".email-error");
 const subjectError = document.querySelector(".subject-error");
 const commentError = document.querySelector(".comment-error");
 const formSuccess = document.querySelector(".form-success");
+
+/*label divs*/
+
+const nameContainer = document.querySelector(".name-container");
+const emailContainer = document.querySelector(".email-container");
+const subjectContainer = document.querySelector(".subject-container");
+const textareaContainer = document.querySelector(".textarea-container");
+
 function validateInput(value, len) {
   if (value.trim().length >= len) {
     return true;
@@ -73,7 +81,7 @@ username.addEventListener("focus", function () {
   const usernameLabelCreate = document.createElement("label");
   usernameLabelCreate.className = "userlabel";
   usernameLabelCreate.innerHTML = "Name";
-  form.insertBefore(usernameLabelCreate, usernameError);
+  nameContainer.insertBefore(usernameLabelCreate, usernameError);
 });
 username.addEventListener("focusout", function () {
   const userLabel = document.querySelector(".userlabel");
@@ -84,7 +92,7 @@ email.addEventListener("focus", function () {
   const emailLabelCreate = document.createElement("label");
   emailLabelCreate.className = "emaillabel";
   emailLabelCreate.innerHTML = "Email";
-  form.insertBefore(emailLabelCreate, emailError);
+  emailContainer.insertBefore(emailLabelCreate, emailError);
 });
 email.addEventListener("focusout", function () {
   const emailLabel = document.querySelector(".emaillabel");
@@ -95,7 +103,7 @@ subject.addEventListener("focus", function () {
   const subjectLabelCreate = document.createElement("label");
   subjectLabelCreate.className = "subjectlabel";
   subjectLabelCreate.innerHTML = "Subject";
-  form.insertBefore(subjectLabelCreate, subjectError);
+  subjectContainer.insertBefore(subjectLabelCreate, subjectError);
 });
 subject.addEventListener("focusout", function () {
   const subjectLabel = document.querySelector(".subjectlabel");
@@ -106,7 +114,7 @@ comment.addEventListener("focus", function () {
   const commentLabelCreate = document.createElement("label");
   commentLabelCreate.className = "commentlabel";
   commentLabelCreate.innerHTML = "Your message";
-  form.insertBefore(commentLabelCreate, commentError);
+  textareaContainer.insertBefore(commentLabelCreate, commentError);
 });
 comment.addEventListener("focusout", function () {
   const commentLabel = document.querySelector(".commentlabel");
