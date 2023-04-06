@@ -52,7 +52,7 @@ searchInput.addEventListener("keyup", function (e) {
 
 async function getSearchContent() {
   const urlPosts =
-    "https://noroffcors.herokuapp.com/" +
+    "https://corsproxy.io/?" +
     "https://motofiedgp.bockey.one/wp-json/wp/v2/posts?per_page=20";
   try {
     const responsePosts = await fetch(urlPosts);
