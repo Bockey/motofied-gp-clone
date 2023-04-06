@@ -1,4 +1,4 @@
-const corsEnabled = "https://noroffcors.herokuapp.com/";
+const corsEnabled = "https://corsproxy.io/?";
 
 const slide1 = document.querySelector(".slide1");
 const slide2 = document.querySelector(".slide2");
