@@ -6,7 +6,7 @@ const id = params.get("id");
 
 /*get data*/
 
-const corsEnabled = "https://noroffcors.herokuapp.com/";
+const corsEnabled = "https://corsproxy.io/?";
 
 const content = document.querySelector(".imported-content");
 const mainContainer = document.querySelector(".content-container");
